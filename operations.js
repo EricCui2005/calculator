@@ -20,17 +20,18 @@ function divide(a, b) {
 
 // Operate function
 // Takes in an operator (operate) and two operands (a, b)
-function operate(operate, a, b) {
-    if (operate === "+") {
-        return add(a, b);
-    }
-    if(operate === "-") {
-        return subtract(a, b);
-    }
-    if(operate === "x") {
-        return multiply(a, b);
-    }
-    if(operate === "%") {
-        return divide(a, b);
+function operate(operator, a, b) {
+    switch(operator) {
+        case "+":
+            return add(a, b);
+        case "-":
+            return subtract(a, b);
+        case "x":
+            return multiply(a, b);
+        case "%":
+            return divide(a, b);
     }
 }
+
+// Exporting functions
+export {operate};

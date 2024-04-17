@@ -1,17 +1,26 @@
-* {
-    border: solid black 1px;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
-/* TO DO */
 #display {
-
+    border: solid black 1px;
+    font-size: 50px;
+    height: 60px;
+    width: 415px;
+    margin-bottom: 5px;
+    text-align: right;
 }
 
 .button-rows {
     display: flex;
     flex-direction: column;
+    height: 500px;
+    width: 500px;
     gap: 5px;
-    height: 1000px;
 }
 
 .button-row {
@@ -21,7 +30,8 @@
 }
 
 .button {
-    height: 50px;
-    width: 50px;
+    font-size: 50px;
+    height: 100px;
+    width: 100px;
 }
 
